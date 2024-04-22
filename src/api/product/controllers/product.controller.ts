@@ -35,6 +35,7 @@ export class ProductController {
     return this.productService.addProductDetails(product.id, body, user.id);
   }
 
+  
   @Auth(RoleIds.Admin, RoleIds.Merchant)
   @Post(':id/activate')
   async activateProduct(

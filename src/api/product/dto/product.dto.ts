@@ -44,3 +44,5 @@ export class ProductDetailsDto {
   @IsNotEmpty()
   public description: string;
 }
+
+
